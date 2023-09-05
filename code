@@ -1,0 +1,38 @@
+def add(x,y):
+    return x+y
+def subtract(x,y):
+    return x-y
+def multiply(x,y):
+    return x*y
+def divide(x,y):
+    if y==0:
+         return ("invalid input")
+    return x / y
+
+while True:
+    print("options")
+    print("Enter 'add' for addition")
+    print("Enter 'subtract' for subtraction")
+    print("Enter 'multiply' for multiplication")
+    print("Enter 'divide' for division")
+    print("Enter 'quit' to end the program")
+
+    user_input=input(": ")
+    if user_input == "quit":
+        break
+
+    if user_input in ("add, subtract, multiply, divide"):
+      numberA = float(input("enter first number: "))
+      numberB = float(input("enter second number: "))
+
+    if user_input=="add":
+      print("result:", add(numberA,numberB))
+    elif user_input=="subtract":
+      print("result:",subtract(numberA,numberB))
+    elif user_input=="multiply:":
+      print("result:", multiply(numberA,numberB))
+    elif user_input=="divide":
+     print("result:",divide(numberA,numberB))
+else:
+    print("invalid input")
+
